@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<video id="nightBg" class="night-bg" autoplay loop muted playsinline>
+    <source src="asessts/night theme.mp4" type="video/mp4">
+</video>
+<video id="lightBg" class="light-bg" autoplay loop muted playsinline>
+    <source src="asessts/light theme.mp4" type="video/mp4">
+</video>
+
+<div class="container">
+    <h1>Pomodoro Timer 🍅</h1>
+    <div id="timer">25:00</div>
+    <div class="custom-time">
+        <label for="customMinutes">Set Minutes: </label>
+        <input type="number" id="customMinutes" min="1" max="120" value="25">
+        <button id="setCustomTime">Set</button>
+    </div>
+    <div class="buttons">
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Reset</button>
+    </div>
+</div>
+
+<button id="toggleTheme" aria-label="Switch to Dark Mode">🌙</button>
+
+<script src="script.js"></script>
+</body>
+</html>
